@@ -1,7 +1,6 @@
 let box=document.querySelectorAll('.box');
 console.log(box);
 box.forEach(function(boxx){
-    console.log(boxx);
   boxx.addEventListener('click',function(e){
      if(e.target.id==='yellow'){
         const b=document.querySelector('body');
