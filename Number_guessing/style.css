@@ -1,0 +1,14 @@
+body{
+    background-color:rgb(255, 157, 7);
+}
+.heading{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
