@@ -1,14 +1,65 @@
 body{
-    background-color:rgb(255, 157, 7);
+ background-color:rgb(255, 157, 7);
 }
 .heading{
     font-size: 50px;
     font-weight: bold;
     color: white;
     text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.instruction{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 15px;
 }
 .video{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.guessArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.guessBox{
+    margin-top: 30px;
+    height: 40px;
+    width: 200px;
+    font-size: large;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(229, 202, 151);
+    margin-left: 20px;
+}
+#output{
+    margin-top: 30px;
+    height: 40px;
+    width: 200px;
+    font-size: large;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(229, 202, 151);
+}
+.reset{
+    height: 40px;
+    width: 200px;
+    font-size: large;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(229, 202, 151);
+    margin-left: 20px;
 }
