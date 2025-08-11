@@ -12,7 +12,7 @@ let prevsec=0;
 let prevmin=0;
 let seconds=0;
 let minutes=0;
-let timerid=0;
+let timerid=null;
 function updatetimer(){
     timerid=setInterval(function(){
             seconds++;
@@ -28,23 +28,25 @@ function updatetimer(){
 controls.forEach(function(control){
   control.addEventListener("click",function(){
     if(control.textContent=="Start"){
-        seconds=prevsec;
-        minutes=prevmin;
-        if(timerid==0)
+        if(timerid==null){
+          seconds=prevsec;
+          minutes=prevmin;
           updatetimer(); 
+        }
+        
     }
     else if(control.innerHTML=="Stop"){
         prevmin=minutes;
         prevsec=seconds;
         clearInterval(timerid);
-        timerid=0;
+        timerid=null;
         const minStr = prevmin.toString().padStart(2, '0');
         const secStr =prevsec.toString().padStart(2, '0'); 
           document.querySelector('.clock').textContent= `${minStr}:${secStr}`;    
     }
     else {
         clearInterval(timerid);
-        timerid=0;
+        timerid=null;
         prevmin=0;
         prevsec=0;
         minutes=0;
